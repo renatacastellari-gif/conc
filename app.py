@@ -3,17 +3,25 @@ import streamlit as st
 # Configuração da página
 st.set_page_config(page_title="CONCILIAÇÕES", page_icon="🟪")
 
-# Senha fixa (pode usar variável de ambiente para mais segurança)
+# Senha fixa
 PASSWORD = "minhasenha123"
 
-# Tela de login
-st.title("Acesso Restrito")
-senha = st.text_input("Digite a senha:", type="password")
+# Inicializa estado de login
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
 
-if senha == PASSWORD:
-    st.success("Acesso liberado!")
-
-    # 🔒 Conteúdo protegido começa aqui
+# Se não estiver logado, pede senha
+if not st.session_state.logged_in:
+    st.title("Acesso Restrito")
+    senha = st.text_input("Digite a senha:", type="password")
+    if st.button("Entrar"):
+        if senha == PASSWORD:
+            st.session_state.logged_in = True
+            st.success("Acesso liberado! Agora você pode navegar pelas páginas.")
+        else:
+            st.error("Senha incorreta.")
+else:
+    # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações')
     st.write('💜 💜:smile: :purple_heart: 💜')
@@ -47,6 +55,7 @@ if senha == PASSWORD:
 
     ---
     🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣🟣
+
     ## ICMS a Recolher
     - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
     - Foi identificada na Filial **019** a diferença de  910,20 (pago a maior).  
@@ -86,6 +95,3 @@ if senha == PASSWORD:
     """)
 
     st.image('ICMST.png', width=900)
-
-else:
-    st.warning("Digite a senha para acessar o conteúdo.")
