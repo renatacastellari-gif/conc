@@ -10,6 +10,15 @@ PASSWORD = "minhasenha123"
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
+# 🔒 Esconde a barra lateral com CSS se não estiver logado
+if not st.session_state.logged_in:
+    hide_sidebar = """
+        <style>
+        [data-testid="stSidebar"] {display: none;}
+        </style>
+    """
+    st.markdown(hide_sidebar, unsafe_allow_html=True)
+
 # Se não estiver logado, pede senha
 if not st.session_state.logged_in:
     st.title("Acesso Restrito")
@@ -18,6 +27,7 @@ if not st.session_state.logged_in:
         if senha == PASSWORD:
             st.session_state.logged_in = True
             st.success("Acesso liberado! Agora você pode navegar pelas páginas.")
+            st.rerun() # Recarrega a página para mostrar o menu
         else:
             st.error("Senha incorreta.")
 else:
@@ -28,5 +38,5 @@ else:
 
     st.markdown("""
     ## Seja bem vindo(a)
-    - Aqui você encontrará o resumo do trabalho que tem sido realizado.   """)
-      
+    - Aqui você encontrará o resumo do trabalho que tem sido realizado.   
+    """)
