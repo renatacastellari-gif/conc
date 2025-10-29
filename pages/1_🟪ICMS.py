@@ -14,7 +14,7 @@ def color_numbers(text):
 
 # Título estilizado
 st.markdown("<h2 style='color:#9B4DCC;'>ICMS a Recolher</h2>", unsafe_allow_html=True)
-st.markdown(color_numbers("<p style='font-size:20px;'>2300391</p>"), unsafe_allow_html=True)
+st.markdown("""**`2300391`**""")
 
 # Texto com números destacados
 texto_recolher = """
@@ -38,7 +38,7 @@ st.markdown(color_numbers(texto_recolher), unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Segundo bloco
-st.markdown("<h2 style='color:#9B4DCC;'>ICMS a Recuperar</h2>", unsafe_allow_html=True)
+st.markdown("""**`1280345`**""")
 st.markdown(color_numbers("<p style='font-size:20px;'>1280345</p>"), unsafe_allow_html=True)
 
 texto_recuperar = """
@@ -53,3 +53,4 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(color_numbers(texto_recuperar), unsafe_allow_html=True)
+
