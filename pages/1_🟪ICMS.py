@@ -5,7 +5,7 @@ st.image('teste.svg', width=200)
 
 # Título estilizado
 st.markdown(
-    "<p style='font-size:25px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>",
+    "<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>",
     unsafe_allow_html=True
 )
 
@@ -34,7 +34,7 @@ st.markdown("---")
 
 # Segundo bloco
 st.markdown(
-    "<p style='font-size:25px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>",
+    "<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>",
     unsafe_allow_html=True
 )
 
@@ -52,5 +52,6 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
+
 
 
