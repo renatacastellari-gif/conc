@@ -7,7 +7,7 @@ st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>ICMS a 
 st.markdown("""
  
 - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
-- Foi identificada na Filial **019** a diferença de  910,20 (pago a maior).  
+- Foi identificada na Filial **019** a diferença de  910,20 (pago a maior).  ("""**`910,20 (pago a maior)`** """)
   Devido à retificação tardia.  
   **DARE ICMS Próprio 06/2025:** valor retificado de 27.303,93 para R$ 26.393,73.  
   Verificar status com fiscal.
@@ -41,4 +41,5 @@ st.markdown("""
 
 
 """)
+
 
