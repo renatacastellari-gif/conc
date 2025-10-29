@@ -1,18 +1,20 @@
-
 import streamlit as st
-st.image('teste.svg', width=200) 
 
+# Cabeçalho
+st.image('teste.svg', width=200)
+
+# Título estilizado
 st.markdown(
-    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> ICMS a Recolher</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>",
     unsafe_allow_html=True
 )
- ("""**`2300391`** """)
+
+st.markdown("**`2300391`**")
+
 st.markdown("""
- 
 - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
-- Foi identificada na Filial **019** a diferença de  910,20 (pago a maior).
-   Devido à retificação tardia.  
-  **DARE ICMS Próprio 06/2025:** valor retificado de 27.303,93 para R$ 26.393,73.  
+- Foi identificada na Filial **019** a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.  
+  **DARE ICMS Próprio 06/2025:** valor retificado de R$ 27.303,93 para R$ 26.393,73.  
   Verificar status com fiscal.
 
 - Foi identificada que a Filial **003** na competência **06/2025** pagou **R$ 1.038,31 a maior**. Tinha saldo credor.  
@@ -25,18 +27,21 @@ st.markdown("""
   O relatório está salvo na pasta da rede. Diferenças relacionadas aos valores do DOOTAX grande parte foram ajustadas e resolvidas pela Patrícia.
 
 - Lançamentos referentes aos ajustes na apuração.  
-  A contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos necessários. """)
+  A contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos necessários.
+""")
 
 st.markdown("---")
 
+# Segundo bloco
 st.markdown(
-    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'> ICMS a Recuperar</p>",
+    "<p style='font-size:23px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>",
     unsafe_allow_html=True
 )
- ("""**`1280345`** """)
-st.markdown("""
 
-## ICMS a Recuperar 
+st.markdown("**`1280345`**")
+
+st.markdown("""
+## ICMS a Recuperar
 - Foi identificado que os créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.  
   **Ação:** lançamentos manuais estão sendo realizados pela contabilidade.
 
@@ -45,13 +50,5 @@ st.markdown("""
   **Status:** pendente. Detalhes salvos na pasta da rede.
 
 - Diferença de valor na NF **880077**  
-  **Status:** pendente de verificação pelos departamentos. 
- 
-
-
+  **Status:** pendente de verificação pelos departamentos.
 """)
-
-
-
-
-
