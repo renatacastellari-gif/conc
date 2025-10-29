@@ -55,4 +55,5 @@ texto_recuperar = """
   Status: pendente de verificação pelos departamentos.
 """
 st.markdown(color_numbers(texto_recuperar), unsafe_allow_html=True)
-``
+
+
