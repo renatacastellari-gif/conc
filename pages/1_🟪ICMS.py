@@ -1,21 +1,24 @@
 import streamlit as st
 
+# Configuração da página
+st.set_page_config(page_title="ICMS", page_icon="🟣")
+
 # Cabeçalho
 st.image('teste.svg', width=300)
 st.write("")
 
-# CSS para colorir números
+# CSS para colorir números automaticamente
 st.markdown(
     """
     <style>
+    /* Cor padrão para texto */
     p, li {
         font-size: 18px;
-    }
-    p, li {
         color: #333;
     }
+    /* Cor para números */
     p, li strong {
-        color: #FFA500; /* aplica cor aos números em negrito */
+        color: #FFA500; /* Laranja para números */
     }
     </style>
     """,
@@ -62,3 +65,4 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
+``
