@@ -1,7 +1,9 @@
 import streamlit as st
 
 # Cabeçalho
-st.image('teste.svg', width=200)
+st.image('teste.svg', width=300)
+
+st.write("")
 
 # Título estilizado
 st.markdown(
@@ -52,6 +54,7 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
+
 
 
 
