@@ -1,4 +1,5 @@
 import streamlit as st
+import re
 
 # Configuração da página
 st.set_page_config(page_title="ICMS", page_icon="🟣")
@@ -7,60 +8,51 @@ st.set_page_config(page_title="ICMS", page_icon="🟣")
 st.image('teste.svg', width=300)
 st.write("")
 
-# CSS para colorir números automaticamente (em negrito)
-st.markdown(
-    """
-    <style>
-    p, li {
-        font-size: 18px;
-        color: #333;
-    }
-    /* Cor para números em negrito */
-    strong {
-        color: #FFA500;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# Função para aplicar cor apenas aos números
+def color_numbers(text):
+    return re.sub(r'(\d[\d.,]*)', r'<span style="color:#FFA500">\1</span>', text)
 
 # Título estilizado
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>", unsafe_allow_html=True)
-st.markdown("**`2300391`**")
+st.markdown(color_numbers("2300391"), unsafe_allow_html=True)
 
-st.markdown("""
+# Texto com números destacados
+texto_recolher = """
 - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
-- Foi identificada na Filial **019** a diferença de **R$ 910,20** (pago a maior), devido à retificação tardia.  
-  **DARE ICMS Próprio 06/2025:** valor retificado de **R$ 27.303,93** para **R$ 26.393,73**.  
+- Foi identificada na Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.  
+  DARE ICMS Próprio 06/2025: valor retificado de R$ 27.303,93 para R$ 26.393,73.  
   Verificar status com fiscal.
 
-- Foi identificada que a Filial **003** na competência **06/2025** pagou **R$ 1.038,31 a maior**. Tinha saldo credor.  
+- Foi identificada que a Filial 003 na competência 06/2025 pagou R$ 1.038,31 a maior. Tinha saldo credor.  
   Verificar status com fiscal.
 
 - Foram identificados valores no razão estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).  
-  **Status:** contabilidade já corrigiu grande parte.
+  Status: contabilidade já corrigiu grande parte.
 
 - Há outras diferenças de notas que constam no razão e não no fiscal, e vice-versa, incluindo divergências de valores.  
   O relatório está salvo na pasta da rede. Diferenças relacionadas aos valores do DOOTAX grande parte foram ajustadas e resolvidas pela Patrícia.
 
 - Lançamentos referentes aos ajustes na apuração.  
   A contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos necessários.
-""")
+"""
+st.markdown(color_numbers(texto_recolher), unsafe_allow_html=True)
 
 st.markdown("---")
 
 # Segundo bloco
 st.markdown("<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>", unsafe_allow_html=True)
-st.markdown("**`1280345`**")
+st.markdown(color_numbers("1280345"), unsafe_allow_html=True)
 
-st.markdown("""
+texto_recuperar = """
 - Foi identificado que os créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.  
-  **Ação:** lançamentos manuais estão sendo realizados pela contabilidade.
+  Ação: lançamentos manuais estão sendo realizados pela contabilidade.
 
 - Entradas de transferências com crédito de ICMS apresentam diversas diferenças que precisam ser analisadas pelos departamentos.  
-  Entre **01/2025 e 08/2025**, foram identificadas **559 notas com divergências** entre razão e apuração fiscal.  
-  **Status:** pendente. Detalhes salvos na pasta da rede.
+  Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre razão e apuração fiscal.  
+  Status: pendente. Detalhes salvos na pasta da rede.
 
-- Diferença de valor na NF **880077**  
-  **Status:** pendente de verificação pelos departamentos.
-""")
+- Diferença de valor na NF 880077  
+  Status: pendente de verificação pelos departamentos.
+"""
+st.markdown(color_numbers(texto_recuperar), unsafe_allow_html=True)
+``
