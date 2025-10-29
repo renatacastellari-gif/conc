@@ -7,18 +7,17 @@ st.set_page_config(page_title="ICMS", page_icon="🟣")
 st.image('teste.svg', width=300)
 st.write("")
 
-# CSS para colorir números automaticamente
+# CSS para colorir números automaticamente (em negrito)
 st.markdown(
     """
     <style>
-    /* Cor padrão para texto */
     p, li {
         font-size: 18px;
         color: #333;
     }
-    /* Cor para números */
-    p, li strong {
-        color: #FFA500; /* Laranja para números */
+    /* Cor para números em negrito */
+    strong {
+        color: #FFA500;
     }
     </style>
     """,
@@ -65,5 +64,3 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
-
-
