@@ -2,21 +2,34 @@ import streamlit as st
 
 # Cabeçalho
 st.image('teste.svg', width=300)
-
 st.write("")
 
-# Título estilizado
+# CSS para colorir números
 st.markdown(
-    "<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>",
+    """
+    <style>
+    p, li {
+        font-size: 18px;
+    }
+    p, li {
+        color: #333;
+    }
+    p, li strong {
+        color: #FFA500; /* aplica cor aos números em negrito */
+    }
+    </style>
+    """,
     unsafe_allow_html=True
 )
 
+# Título estilizado
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recolher</p>", unsafe_allow_html=True)
 st.markdown("**`2300391`**")
 
 st.markdown("""
 - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
-- Foi identificada na Filial **019** a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.  
-  **DARE ICMS Próprio 06/2025:** valor retificado de R$ 27.303,93 para R$ 26.393,73.  
+- Foi identificada na Filial **019** a diferença de **R$ 910,20** (pago a maior), devido à retificação tardia.  
+  **DARE ICMS Próprio 06/2025:** valor retificado de **R$ 27.303,93** para **R$ 26.393,73**.  
   Verificar status com fiscal.
 
 - Foi identificada que a Filial **003** na competência **06/2025** pagou **R$ 1.038,31 a maior**. Tinha saldo credor.  
@@ -35,15 +48,10 @@ st.markdown("""
 st.markdown("---")
 
 # Segundo bloco
-st.markdown(
-    "<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>",
-    unsafe_allow_html=True
-)
-
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#9B4DCC;'>ICMS a Recuperar</p>", unsafe_allow_html=True)
 st.markdown("**`1280345`**")
 
 st.markdown("""
-
 - Foi identificado que os créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.  
   **Ação:** lançamentos manuais estão sendo realizados pela contabilidade.
 
@@ -54,7 +62,3 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
-
-
-
-
