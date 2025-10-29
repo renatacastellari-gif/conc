@@ -41,7 +41,7 @@ st.markdown(
 st.markdown("**`1280345`**")
 
 st.markdown("""
-## ICMS a Recuperar
+
 - Foi identificado que os créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.  
   **Ação:** lançamentos manuais estão sendo realizados pela contabilidade.
 
@@ -52,3 +52,4 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** pendente de verificação pelos departamentos.
 """)
+
