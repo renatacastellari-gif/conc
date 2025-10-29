@@ -2,9 +2,10 @@
 import streamlit as st
 st.image('teste.svg', width=200) 
 
-
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>ICMS a Recolher </p>", unsafe_allow_html=True)
+ 
 st.markdown("""
- ## ICMS a Recolher
+ 
 - Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.
 - Foi identificada na Filial **019** a diferença de  910,20 (pago a maior).  
   Devido à retificação tardia.  
@@ -40,3 +41,4 @@ st.markdown("""
 
 
 """)
+
