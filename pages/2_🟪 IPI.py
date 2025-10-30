@@ -47,16 +47,17 @@ st.markdown("""
     color:#FFFFFF;
     font-size:16px;">
 <ul style="list-style-type:none; padding-left:0;">
-<li> -- Competência <strong>06/2025</strong> (pagamento em 07/2025).</li>
+<li> Competência <strong>06/2025</strong> (pagamento em 07/2025).</li>
 <li>⚠️ Filial <strong>008</strong>: Identificado pagamento de <span style="color:#FFA500;">R$ 14.174,76 a maior</span>.</li>
 <li>⚠️ Filial <strong>019</strong>: Identificado pagamento de <span style="color:#FFA500;">R$ 6.463,23 a maior</span>. <br><strong>Status:</strong> Fiscal ciente, verificar compensação.</li>
-<li> -- Sugestão: Automatizar o processo que envia esses valores para DCTFWeb para evitar digitação manual.</li>
+<li> **Sugestão:** Automatizar o processo que envia esses valores para DCTFWeb para evitar digitação manual.</li>
 <li>⚠️ Competência <strong>04/2025</strong>: diferença de <span style="color:#FFA500;">R$ 10,00</span> na Filial 002 e <span style="color:#FFA500;">R$ 13,16</span> na Filial 006.</li>
 <li>⚠️ Filial <strong>015 (03/2025)</strong>: pagou <span style="color:#FFA500;">R$ 5.000,00 a menor</span>.</li>
 <li>⚠️Diferença de valor na NF <strong>880077</strong>. <br><strong>Status:</strong> Fiscal ciente.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
