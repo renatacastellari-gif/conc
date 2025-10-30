@@ -91,6 +91,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+IPI a Recuperar
+</h2>
+""", unsafe_allow_html=True)
+
 # Bloco 4 - Diferença NF 880077
 st.markdown("""
 <div style="
@@ -104,6 +117,7 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
