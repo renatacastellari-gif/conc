@@ -36,19 +36,7 @@ IPI a Recolher
 """, unsafe_allow_html=True)
 
 # Conta com destaque visual
-st.markdown("""
-<div style="
-    background-color:#2E2E2E;
-    color:#FFA500;
-    font-size:18px;
-    font-weight:bold;
-    padding:10px;
-    border-radius:6px;
-    text-align:center;
-    margin-bottom:15px;">
-Conta: 2300390
-</div>
-""", unsafe_allow_html=True)
+st.markdown("""**`Conta: 2300390`**""")
 
 # Bloco com lista estilizada
 st.markdown("""
@@ -69,3 +57,4 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
