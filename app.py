@@ -35,11 +35,12 @@ else:
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
    
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Seja vem vindo(a)</p>", unsafe_allow_html=True)  
+
  
     st.markdown("""
     ## Seja bem vindo(a)
     - Aqui você encontrará o resumo do trabalho que tem sido realizado.   
     """)
 
+st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Seja bem vindo(a)</p>", unsafe_allow_html=True)  
 
