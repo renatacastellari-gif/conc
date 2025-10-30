@@ -45,7 +45,7 @@ st.markdown("""
 PIS-COFINS
 </h2>
 """, unsafe_allow_html=True)
-st.markdown("""**`a recolher`**""")
+st.markdown("""**`PIS - COFINS a recolher`**""")
 
 # Bloco 1
 st.markdown("""
@@ -79,6 +79,7 @@ A conciliação do mês <strong>09</strong> ainda constam com divergências que 
 Para a competência de outubro, espera-se que os novos parâmetros aplicados pelo departamento fiscal tenham reduzido as divergências entre o razão contábil e a apuração fiscal.</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
