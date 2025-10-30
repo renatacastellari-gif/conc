@@ -79,17 +79,7 @@ st.markdown(f"<div class='card'>{color_numbers(texto_recolher)}</div>", unsafe_a
 st.markdown("<hr>", unsafe_allow_html=True)
 
 
-st.markdown("""
-<h4>🔶 ICMS a Recolher – Pagamentos a Maior</h4>
-<ul>
-<li>⚠️ <strong>Filial 019</strong>: diferença de <span style="color:#FFA500;">R$ 910,20</span> (pago a maior), devido à retificação tardia.<br>
-DARE ICMS Próprio 06/2025: valor retificado de <span style="color:#FFA500;">R$ 27.303,93</span> para <span style="color:#FFA500;">R$ 26.393,73</span>.<br>
-<strong>→ Verificar status com fiscal.</strong></li>
-<br>
-<li>⚠️ <strong>Filial 003</strong>: competência 06/2025 pagou <span style="color:#FFA500;">R$ 1.038,31</span> a maior. Tinha saldo credor.<br>
-<strong>→ Verificar status com fiscal.</strong></li>
-</ul>
-""", unsafe_allow_html=True)
+
 
 
 
@@ -120,4 +110,5 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
