@@ -2,8 +2,19 @@ import streamlit as st
 st.image('teste.svg', width=200) 
 
 
+# Título estilizado
 st.markdown("""
-## IPI a Recolher
+<h2 style="
+    color:#9B4DCC;
+    font-weight:700;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:5px;
+    margin-bottom:15px;">
+IPI a Recolher
+</h2>
+""", unsafe_allow_html=True)
+st.markdown("""
+
 - Competência **06/2025** (pagamento em 07/2025).
 - Filial **008**: Identificado pagamento de **R$ 14.174,76 a maior**.
 - Filial **019**: Identificado pagamento de **R$ 6.463,23 a maior**.  
@@ -17,6 +28,7 @@ st.markdown("""
   **Status:** Fiscal ciente.
 
             
+
 
 
 
