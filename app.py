@@ -34,6 +34,14 @@ else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
+
+    
+    st.markdown("""
+    <h1 style='color: #FF8C00; font-family: Montserrat, sans-serif; font-weight: 600;'>
+    Conciliações dos Impostos
+    </h1>
+    """, unsafe_allow_html=True
+
    
 
  
@@ -43,6 +51,7 @@ else:
     st.markdown("""
     - Nesta página, apresento o resumo do trabalho desenvolvido, com os principais destaques. 
     """)
+
 
 
 
