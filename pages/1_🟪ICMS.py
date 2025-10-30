@@ -82,6 +82,19 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # Segundo bloco
 
+
+# Título estilizado
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-weight:700;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:5px;
+    margin-bottom:15px;">
+ICMS a Recuperar
+</h2>
+""", unsafe_allow_html=True)
+
 st.markdown("""**`Conta: 1280345`**""")
 
 
@@ -97,6 +110,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
