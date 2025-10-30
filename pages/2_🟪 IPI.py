@@ -72,7 +72,7 @@ st.markdown("""
 
 
 <li>Filial 002: Diferença de <span style="color:#FFA500;">R$ 10,00</span> (Valor pago: <span style="color:#FFA500;">R$ 34.146,04</span>. Apuração: <span style="color:#FFA500;">R$ 34.136,04</span>).</li>
-<li>Filial 006: diferença <span style="color:#FFA500;">R$ 13,16</span>.</li>
+<li>Filial 006: Diferença <span style="color:#FFA500;">R$ 13,16 </span>.</li>
 </ul>
 """, unsafe_allow_html=True)
 
@@ -103,6 +103,7 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
