@@ -33,7 +33,7 @@ if not st.session_state.logged_in:
 else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
-    st.title('Conciliações dos Impostos')
+    
 
 
     
@@ -58,6 +58,7 @@ Conciliações dos Impostos
     st.markdown("""
     - Nesta página, apresento o resumo do trabalho desenvolvido, com os principais destaques. 
     """)
+
 
 
 
