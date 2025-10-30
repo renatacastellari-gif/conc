@@ -119,18 +119,7 @@ df_resumo["Diferença"] = df_resumo["Valor Pago"] - df_resumo["Valor Apuração"
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-# Card estilizado
-st.markdown("""
-<div style="
-    background-color:#1E1E1E;
-    color:#EAEAEA;
-    padding:15px;
-    border-radius:8px;
-    margin-bottom:20px;">
-<h4 style="color:#FFA500;">⚠️ Diferença do Valor Pago vs Valor Apuração</h4>
-<p>O departamento fiscal precisa analisar e corrigir, se necessário.</p>
-</div>
-""", unsafe_allow_html=True)
+st.markdown("<p style='font-size:20px; font-weight:bold; color:#FFA500;'>⚠️Diferença valor pago vs apuração</p>", unsafe_allow_html=True)
 
 # Exibir tabela com destaque na coluna Diferença
 st.dataframe(
@@ -140,6 +129,7 @@ st.dataframe(
         "Diferença": "{:,.2f}"
     }).applymap(highlight_dif, subset=["Diferença"])
 )
+
 
 
 
