@@ -49,8 +49,8 @@ st.markdown("""
     border-radius:8px;
     margin-bottom:20px;">
 <ul style="list-style-type:none; padding-left:0;">
-<li>⚠️ Não foi identificado o pagamento do ICMS ST mensal <strong>08/2025</strong> no valor de <span style="color:#9B4DCC;">R$ 55.394,97</span>, referente à filial <strong>15</strong>, com vencimento em <strong>12/09</strong>.</li>
-<li><strong>Status:</strong> Guia recalculada e enviada para pagamento. 🎟️ Multa e Juros: <span style="color:#9B4DCC;">R$ 6.892,22</span>.</li>
+<li>⚠️ Não foi identificado o pagamento do ICMS ST mensal <strong>08/2025</strong> no valor de <span style="color:#FFA500;;">R$ 55.394,97</span>, referente à filial <strong>15</strong>, com vencimento em <strong>12/09</strong>.</li>
+<li><strong>Status:</strong> Guia recalculada e enviada para pagamento. 🎟️ Multa e Juros: <span style="color:#FFA500;;">R$ 6.892,22</span>.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -63,7 +63,7 @@ st.markdown("""
     padding:15px;
     border-radius:8px;
     margin-bottom:20px;">
-<h5 style="color:#9B4DCC;">Notas de devolução sem direito a crédito:</h5>
+<h5 style="color:#FFBC42;">Notas de devolução sem direito a crédito:</h5>
 <p>
 Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido antecipadamente. No entanto, quando há devolução dessas mercadorias por meio do CFOP <strong>2.411</strong>, e a empresa — como é o caso da Omnifile — não possui inscrição estadual no estado remetente, ela não pode se creditar do ICMS-ST destacado na nota original.
 </p>
@@ -72,3 +72,4 @@ Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido
 </p>
 </div>
 """, unsafe_allow_html=True)
+
