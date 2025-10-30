@@ -50,7 +50,7 @@ st.markdown("""
     padding:15px;
     border-radius:8px;
     margin-bottom:20px;">
-<h5>Competência 06/2025 (pagamento em 07/2025):</h5>
+<h5>Competência 06/2025:</h5>
 <ul style="list-style-type:none; padding-left:0;">
 <li>Filial <strong>008</strong>: Identificado pagamento de <span style="color:#FFA500;">R$ 14.174,76 a maior</span>.</li>
 <li>Filial <strong>019</strong>: Identificado pagamento de <span style="color:#FFA500;">R$ 6.463,23 a maior</span>.</li>
@@ -67,7 +67,7 @@ st.markdown("""
     padding:15px;
     border-radius:8px;
     margin-bottom:20px;">
-<h3>Competência 04/2025 (pagamento em 05/2025):</h3>
+<h5>Competência 04/2025:</h5>
 <ul style="list-style-type:none; padding-left:0;">
 <li>Diferença de <span style="color:#FFA500;">R$ 10,00</span> na Filial 002 e <span style="color:#FFA500;">R$ 13,16</span> na Filial 006.</li>
 </ul>
@@ -81,9 +81,9 @@ st.markdown("""
     padding:15px;
     border-radius:8px;
     margin-bottom:20px;">
-<h3>Filial 015 (03/2025):</h3>
+<h5> Competência 03/2025:</h5>
 <ul style="list-style-type:none; padding-left:0;">
-<li>Pagou <span style="color:#FFA500;">R$ 5.000,00 a menor</span>.</li>
+<li> Filial 015: Pagou <span style="color:#FFA500;">R$ 5.000,00 a menor</span>.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -100,4 +100,5 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
