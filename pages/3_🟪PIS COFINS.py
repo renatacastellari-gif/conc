@@ -101,7 +101,8 @@ PIS-COFINS
 st.markdown("""**`PIS - COFINS a recuperar`**""")
 
 
-# Nova tabela com resumo PIS/COFINS
+
+# Dados
 data_resumo = {
     "Tributo": ["PIS", "COFINS"],
     "Período": ["09/2025", "09/2025"],
@@ -111,19 +112,25 @@ data_resumo = {
 }
 
 df_resumo = pd.DataFrame(data_resumo)
-
-# Adicionar coluna Diferença
 df_resumo["Diferença"] = df_resumo["Valor Pago"] - df_resumo["Valor Apuração"]
 
 # Função para destacar diferença positiva
 def highlight_dif(val):
     return 'background-color: #9b59b6; color: white;' if val > 0 else ''
 
-# Título estilizado
-st.markdown(
-    "<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença do Valor pago vs Valor capa apuração</p>",
-    unsafe_allow_html=True
-)
+# Card estilizado
+st.markdown("""
+<div style="
+    background-color:#1E1E1E;
+    color:#EAEAEA;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;">
+<h4 style="color:#FFA500;">⚠️ Diferença do Valor Pago vs Valor Apuração</h4>
+<p>O departamento fiscal precisa analisar e corrigir, se necessário.</p>
+</div>
+""", unsafe_allow_html=True)
+
 # Exibir tabela com destaque na coluna Diferença
 st.dataframe(
     df_resumo.style.format({
@@ -132,7 +139,6 @@ st.dataframe(
         "Diferença": "{:,.2f}"
     }).applymap(highlight_dif, subset=["Diferença"])
 )
-st.markdown("<p style='font-size:18px; font-weight:bold; color:#FAFF70;'>O departamento fiscal precisa analisar e corrigir, se necessário.</p>", unsafe_allow_html=True)
 
 
 
