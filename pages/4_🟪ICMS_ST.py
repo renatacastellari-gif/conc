@@ -24,9 +24,7 @@ h3 {
 
 # Cabeçalho com logo
 
-st.markdown("""
-<div style='text-align: center;'>
-    <img src='teste.svg' widthfe_allow_html=True)
+st.image('teste.svg', width=200) 
 
 st.write("")
 
@@ -81,4 +79,5 @@ Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido
 </div>
 </div>
 """, unsafe_allow_html=True)
+
 
