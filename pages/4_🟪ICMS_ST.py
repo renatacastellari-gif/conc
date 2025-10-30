@@ -48,9 +48,10 @@ st.markdown("""
     border-radius:8px;
     margin-bottom:20px;">
 <ul style="list-style-type:none; padding-left:0;">
-<li>Não foi identificado o pagamento do ICMS ST mensal <strong>08/2025</strong> no valor de <span style="color:#FFA500;">R$ 55.394,97</span>, referente à filial <strong>15</strong>, com vencimento em <strong>12/09</strong>.</li>
-<li><strong>Status:</strong> Guia recalculada e enviada para pagamento. Multa e Juros: <span style="color:#FFA500;">R$ 6.892,22</span>.</li>
+<li>⚠️Não foi identificado o pagamento do ICMS ST mensal <strong>08/2025</strong> no valor de <span style="color:#FFA500;">R$ 55.394,97</span>, referente à filial <strong>15</strong>, com vencimento em <strong>12/09</strong>.</li>
+<li><strong>Status:</strong> Guia recalculada e enviada para pagamento. 🎟️Multa e Juros: <span style="color:#FFA500;">R$ 6.892,22</span>.</li>
 <li>Identificada <strong>notas de devolução sem direito a crédito</strong>.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
