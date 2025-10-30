@@ -35,6 +35,21 @@ ul li {
 """, unsafe_allow_html=True)
 
 # Cabeçalho com logo
+
+# CSS para centralizar qualquer imagem
+st.markdown("""
+<style>
+div[data-testid="stImage"] {
+    display: flex;
+    justify-content: center;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Exibir imagem
+
+
+
 st.image('teste.svg', width=200)
 st.write("")
 
@@ -133,6 +148,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
