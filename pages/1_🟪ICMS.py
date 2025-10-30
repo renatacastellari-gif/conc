@@ -71,19 +71,19 @@ st.markdown(f"<div class='card'>{color_numbers(texto_recolher)}</div>", unsafe_a
 
 # ================= BLOCO EXTRA: Diferenças por Filial =================
 st.markdown("""
-<h2 style="
+<h5 style="
     color:#FFA500;
     font-weight:700;
     border-bottom:2px solid #9B4DCC;
     padding-bottom:5px;
     margin-bottom:15px;">
-Diferenças por Filial
-</h2>
+Diferenças de Pagamentos
+</h5>
 """, unsafe_allow_html=True)
 
 texto_diferencas = """
 <ul>
-<li>⚠️ Foi identificada na Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.<br>
+<li>⚠️ Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.<br>
 DARE ICMS Próprio 06/2025: valor retificado de R$ 27.303,93 para R$ 26.393,73.<br>
 Verificar status com fiscal.</li>
 <li>⚠️ Filial 003 na competência 06/2025 pagou R$ 1.038,31 a maior. Tinha saldo credor.<br>
@@ -121,3 +121,4 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
