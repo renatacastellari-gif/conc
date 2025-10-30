@@ -40,22 +40,29 @@ PIS e COFINS a Recolher
 </h2>
 """, unsafe_allow_html=True)
 
-# Bloco de informações
+# Card com conteúdo organizado
 st.markdown("""
 <div style="
     background-color:#1E1E1E;
-    padding:15px;
-    border-radius:8px;
-    margin-bottom:20px;">
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);">
+
+<h4 style="color:#FFA500;">Conciliação Fiscal</h4>
 <ul style="list-style-type:none; padding-left:0;">
-<li>Foi identificado que o produto <strong>LB espuma</strong> estava sendo tributado na nota fiscal e indo para o razão, mas não na apuração fiscal. O departamento fiscal constatou que a apuração estava incorreta.</li>
-<li>Foi identificado que a base de cálculo do imposto na emissão da nota não deduzia o ICMS destacado, como ocorre na apuração fiscal. Ficou alinhado inicialmente que seriam feitos lançamentos manuais para ajuste na contabilidade.</li>
-<li>Na conciliação, verificou-se que itens da nota fiscal não estavam sendo tributados da mesma forma que nos itens da apuração fiscal. <strong>Status:</strong> Constatou-se que alguns produtos apresentavam erro de parâmetro no SAP, já corrigido pela Silmara.</li>
+<li>Produto <strong>LB espuma</strong> estava sendo tributado na nota fiscal e indo para o razão, mas não na apuração fiscal.</li>
+<li>Base de cálculo do imposto na nota não deduzia o ICMS destacado, diferente da apuração fiscal.</li>
+<li>Itens da nota fiscal estavam com tributação diferente da apuração. <strong>Status:</strong> Erro de parâmetro no SAP corrigido pela Silmara.</li>
 </ul>
-<p>A conciliação do COFINS foi realizada comparando os itens do razão (notas fiscais), analisando os XMLs e confrontando com a planilha de apuração fiscal.</p>
-<p>Estamos aguardando as correções do mês <strong>08</strong>.</p>
-<p>A conciliação do mês <strong>09</strong> deverá vir com as divergências reduzidas devido às correções efetuadas pela Silmara. Entretanto, uma nova conciliação deverá ser realizada, inclusive para verificar notas fiscais que não entraram no razão e suas possíveis ações e ajustes na contabilidade.</p>
+
+<h4 style="color:#FFA500;">Situação Atual</h4>
+<ul style="list-style-type:none; padding-left:0;">
+<li>Conciliação do COFINS foi feita comparando razão, XMLs e planilha de apuração.</li>
+<li>Aguardando correções do mês <strong>08</strong>.</li>
+<li>Conciliação do mês <strong>09</strong> deve vir com menos divergências.</li>
+<li>Nova conciliação será feita para verificar notas que não entraram no razão e possíveis ajustes contábeis.</li>
+</ul>
+
 </div>
 """, unsafe_allow_html=True)
-
-
