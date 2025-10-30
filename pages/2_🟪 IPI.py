@@ -1,6 +1,6 @@
 import streamlit as st
-st.image('teste.svg', width=200) MELHORA DEPOIS DA CONTA
 
+st.image('teste.svg', width=200)
 
 # Título estilizado
 st.markdown("""
@@ -30,10 +30,4 @@ st.markdown("""
 - Diferença de valor na NF **880077**  
   **Status:** Fiscal ciente.
 
-            
-
-
-
-
 """)
-
