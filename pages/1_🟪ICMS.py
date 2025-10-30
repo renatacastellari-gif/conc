@@ -43,13 +43,16 @@ def color_numbers(text):
     return re.sub(r'(\d[\d.,]*)', r'<span class="highlight">\1</span>', text)
 
 # ================= BLOCO 1: ICMS a Recolher =================
+# Título principal
 st.markdown("""
 <h2 style="
     color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
     font-weight:700;
+    text-align:center;
     border-bottom:2px solid #FFA500;
-    padding-bottom:5px;
-    margin-bottom:15px;">
+    padding-bottom:8px;
+    margin-bottom:20px;">
 ICMS a Recolher
 </h2>
 """, unsafe_allow_html=True)
@@ -126,6 +129,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
