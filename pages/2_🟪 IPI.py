@@ -103,6 +103,7 @@ st.markdown("""
 IPI a Recuperar
 </h2>
 """, unsafe_allow_html=True)
+st.markdown("""**`Conta: 1280342`**""")
 
 # Bloco 4 - Diferença NF 880077
 st.markdown("""
@@ -117,6 +118,7 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
