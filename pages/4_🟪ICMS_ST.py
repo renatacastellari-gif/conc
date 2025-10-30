@@ -57,7 +57,7 @@ st.markdown("""
 # Card 2 - Notas de devolução sem crédito
 st.markdown("""
 <div style="
-    background-color:#FFBC42;
+    background-color:#1E1E1E;
     padding:15px;
     border-radius:8px;
     margin-bottom:20px;">
@@ -70,4 +70,3 @@ Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido
 </p>
 </div>
 """, unsafe_allow_html=True)
-
