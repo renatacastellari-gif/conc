@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Configuração da página
 st.set_page_config(page_title="PIS e COFINS", page_icon="🟣")
@@ -139,6 +140,7 @@ st.dataframe(
         "Diferença": "{:,.2f}"
     }).applymap(highlight_dif, subset=["Diferença"])
 )
+
 
 
 
