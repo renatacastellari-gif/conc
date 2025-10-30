@@ -105,11 +105,12 @@ texto_recuperar = """
 <li> ⚠️ Entradas de transferências com crédito de ICMS apresentam diversas diferenças.<br>
 Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre razão e apuração fiscal.<br>
 <strong>Status:</strong> pendente. Detalhes salvos na pasta da rede.</li>
-<li>⚠️ Diferença de valor na NF 880077.<br>
+<li>⚠️ Diferença de valor (Stile) na NF 880077.<br>
 <strong>Status:</strong> pendente de verificação pelos departamentos.</li>
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
