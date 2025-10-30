@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="IPI", page_icon="🟣", layout="wide")
+st.set_page_config(page_title="IPI", page_icon="🟣")
 
 # CSS Global
 st.markdown("""
@@ -69,3 +69,4 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
