@@ -65,4 +65,10 @@ st.markdown("""
     margin-bottom:20px;">
 <h5 style="color:#9B4DCC;">Notas de devolução sem direito a crédito:</h5>
 <p>
-Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido antecipadamente. No entanto, quando há devolução dessas mercadorias por meio do CFOP <
+Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido antecipadamente. No entanto, quando há devolução dessas mercadorias por meio do CFOP <strong>2.411</strong>, e a empresa — como é o caso da Omnifile — não possui inscrição estadual no estado remetente, ela não pode se creditar do ICMS-ST destacado na nota original.
+</p>
+<p>
+<strong>Status:</strong> Aguardando confirmação do departamento fiscal se há intenção de solicitar a restituição desses valores junto ao estado de origem ou se devemos considerar esses valores como perda definitiva para fins de contabilização.
+</p>
+</div>
+""", unsafe_allow_html=True)
