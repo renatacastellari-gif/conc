@@ -61,17 +61,17 @@ st.markdown("""**`Conta: 2300391`**""")
 # Primeiro bloco com card
 texto_recolher = """
 <ul>
-<li>✅ Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
+<li> Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
 <li>⚠️ Foi identificada na Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.<br>
 DARE ICMS Próprio 06/2025: valor retificado de R$ 27.303,93 para R$ 26.393,73.<br>
 Verificar status com fiscal.</li>
 <li>⚠️ Filial 003 na competência 06/2025 pagou R$ 1.038,31 a maior. Tinha saldo credor.<br>
 Verificar status com fiscal.</li>
-<li>🔍 Valores no razão estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).<br>
+<li> Valores no razão estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).<br>
 <strong>Status:</strong> contabilidade já corrigiu grande parte.</li>
-<li>🔍 Diferenças entre razão e fiscal, incluindo divergências de valores.<br>
+<li> Diferenças entre razão e fiscal, incluindo divergências de valores.<br>
 Relatório salvo na pasta da rede. Ajustes DOOTAX resolvidos pela Patrícia.</li>
-<li>🛠️ Lançamentos referentes aos ajustes na apuração.<br>
+<li> Lançamentos referentes aos ajustes na apuração.<br>
 Contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos necessários.</li>
 </ul>
 """
@@ -89,7 +89,7 @@ texto_recuperar = """
 <ul>
 <li>⚠️ Créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.<br>
 <strong>Ação:</strong> lançamentos manuais estão sendo realizados pela contabilidade.</li>
-<li>🔍 Entradas de transferências com crédito de ICMS apresentam diversas diferenças.<br>
+<li> Entradas de transferências com crédito de ICMS apresentam diversas diferenças.<br>
 Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre razão e apuração fiscal.<br>
 <strong>Status:</strong> pendente. Detalhes salvos na pasta da rede.</li>
 <li>⚠️ Diferença de valor na NF 880077.<br>
@@ -97,6 +97,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
