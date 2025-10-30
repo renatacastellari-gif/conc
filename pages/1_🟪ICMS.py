@@ -59,11 +59,6 @@ st.markdown("""**`Conta: 2300391`**""")
 texto_recolher = """
 <ul>
 <li>Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
-<li>⚠️ Foi identificada na Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.<br>
-DARE ICMS Próprio 06/2025: valor retificado de R$ 27.303,93 para R$ 26.393,73.<br>
-Verificar status com fiscal.</li>
-<li>⚠️ Filial 003 na competência 06/2025 pagou R$ 1.038,31 a maior. Tinha saldo credor.<br>
-Verificar status com fiscal.</li>
 <li>Valores no razão estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).<br>
 <strong>Status:</strong> contabilidade já corrigiu grande parte.</li>
 <li>Diferenças entre razão e fiscal, incluindo divergências de valores.<br>
@@ -73,6 +68,29 @@ Contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos 
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recolher)}</div>", unsafe_allow_html=True)
+
+# ================= BLOCO EXTRA: Diferenças por Filial =================
+st.markdown("""
+<h2 style="
+    color:#FFA500;
+    font-weight:700;
+    border-bottom:2px solid #9B4DCC;
+    padding-bottom:5px;
+    margin-bottom:15px;">
+Diferenças por Filial
+</h2>
+""", unsafe_allow_html=True)
+
+texto_diferencas = """
+<ul>
+<li>⚠️ Foi identificada na Filial 019 a diferença de R$ 910,20 (pago a maior), devido à retificação tardia.<br>
+DARE ICMS Próprio 06/2025: valor retificado de R$ 27.303,93 para R$ 26.393,73.<br>
+Verificar status com fiscal.</li>
+<li>⚠️ Filial 003 na competência 06/2025 pagou R$ 1.038,31 a maior. Tinha saldo credor.<br>
+Verificar status com fiscal.</li>
+</ul>
+"""
+st.markdown(f"<div class='card'>{color_numbers(texto_diferencas)}</div>", unsafe_allow_html=True)
 
 # Separador
 st.markdown("<hr>", unsafe_allow_html=True)
