@@ -38,11 +38,11 @@ ul li {
 st.image('teste.svg', width=300)
 st.write("")
 
-# Função para aplicar cor aos números
+# Função para aplicar cor apenas aos números
 def color_numbers(text):
     return re.sub(r'(\d[\d.,]*)', r'<span class="highlight">\1</span>', text)
 
-# Título ICMS a Recolher
+# ================= BLOCO 1: ICMS a Recolher =================
 st.markdown("""
 <h2 style="
     color:#9B4DCC;
@@ -56,7 +56,6 @@ ICMS a Recolher
 
 st.markdown("""**`Conta: 2300391`**""")
 
-# Texto do bloco ICMS a Recolher
 texto_recolher = """
 <ul>
 <li>Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
@@ -78,12 +77,7 @@ st.markdown(f"<div class='card'>{color_numbers(texto_recolher)}</div>", unsafe_a
 # Separador
 st.markdown("<hr>", unsafe_allow_html=True)
 
-
-
-
-
-
-# Título ICMS a Recuperar
+# ================= BLOCO 2: ICMS a Recuperar =================
 st.markdown("""
 <h2 style="
     color:#9B4DCC;
@@ -97,7 +91,6 @@ ICMS a Recuperar
 
 st.markdown("""**`Conta: 1280345`**""")
 
-# Texto do bloco ICMS a Recuperar
 texto_recuperar = """
 <ul>
 <li>⚠️ Créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.<br>
@@ -110,5 +103,3 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
-
-
