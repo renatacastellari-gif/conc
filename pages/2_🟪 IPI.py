@@ -69,7 +69,7 @@ st.markdown("""
     margin-bottom:20px;">
 <h5>Competência 04/2025:</h5>
 <ul style="list-style-type:none; padding-left:0;">
-<li>Diferença de <span style="color:#FFA500;">R$ 10,00</span> na Filial 002 e <span style="color:#FFA500;">R$ 13,16</span> na Filial 006.</li>
+<li>Filial 002: Diferença de <span style="color:#FFA500;">R$ 10,00</span>. Filial 006: diferença <span style="color:#FFA500;">R$ 13,16</span>.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -100,5 +100,6 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
