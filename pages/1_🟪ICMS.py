@@ -55,7 +55,8 @@ ICMS a Recolher
 """, unsafe_allow_html=True)
 
 # Conta
-st.markdown("""<p style="font-size:18px; font-weight:bold;">Conta: 2300391</p>""", unsafe_allow_html=True)
+st.markdown("""**`Conta: 2300391`**""")
+
 
 # Primeiro bloco com card
 texto_recolher = """
@@ -80,7 +81,9 @@ st.markdown(f"<div class='card'>{color_numbers(texto_recolher)}</div>", unsafe_a
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Segundo bloco
-st.markdown("""<p style="font-size:18px; font-weight:bold;">Conta: 1280345</p>""", unsafe_allow_html=True)
+
+st.markdown("""**`Conta: 1280345`**""")
+
 
 texto_recuperar = """
 <ul>
@@ -94,6 +97,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
