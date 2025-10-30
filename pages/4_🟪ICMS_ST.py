@@ -28,11 +28,6 @@ st.image('teste.svg', width=200)
 
 
 
-st.markdown("""
-<div style='text-align: center;'>
-    teste.svg
-</div>
-""", unsafe_allow_html=True)
 
 
 
@@ -89,6 +84,7 @@ Nas operações de venda com CFOP <strong>6.403</strong>, o ICMS-ST é recolhido
 </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
