@@ -37,10 +37,11 @@ else:
    
 
  
+
+
+st.markdown("<p style='font-size:29px; font-weight:bold; color:#FFA500;'>Seja bem vindo(a)</p>", unsafe_allow_html=True)  
     st.markdown("""
-    ## Seja bem vindo(a)
-    - Aqui você encontrará o resumo do trabalho que tem sido realizado.   
+    - Nesta página, apresento o resumo do trabalho desenvolvido, com os principais destaques. 
     """)
 
-st.markdown("<p style='font-size:28px; font-weight:bold; color:#FFA500;'>Seja bem vindo(a)</p>", unsafe_allow_html=True)  
 
