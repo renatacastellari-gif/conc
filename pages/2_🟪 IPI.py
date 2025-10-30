@@ -13,6 +13,9 @@ st.markdown("""
 IPI a Recolher
 </h2>
 """, unsafe_allow_html=True)
+
+st.markdown("""**`Conta: 2300390`**""")
+
 st.markdown("""
 
 - Competência **06/2025** (pagamento em 07/2025).
@@ -33,3 +36,4 @@ st.markdown("""
 
 
 """)
+
