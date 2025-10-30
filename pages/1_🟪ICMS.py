@@ -61,11 +61,11 @@ st.markdown("""**`Conta: 2300391`**""")
 
 texto_recolher = """
 <ul>
-<li>Separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
-<li>Valores no razão estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).<br>
+<li> Estão sendo separadas as notas de consumo próprio para lançamentos manuais pela contabilidade.</li>
+<li>Valores no razão que estavam em contas incorretas ou com valores registrados incorretos (ex.: provisões e autos de infração).<br>
 <strong>Status:</strong> contabilidade já corrigiu grande parte.</li>
-<li>Diferenças entre razão e fiscal, incluindo divergências de valores.<br>
-O relatório está salvo na pasta da rede. Diferenças relacionadas aos valores do DOOTAX grande parte foram ajustadas e resolvidas pela Patrícia.</li>
+<li>Há diferenças entre razão e fiscal, incluindo divergências de valores.<br>
+O relatório está salvo na 📁 pasta da rede. Diferenças relacionadas aos valores do DOOTAX grande parte foram ajustadas e resolvidas pela Patrícia.</li>
 <li>Lançamentos referentes aos ajustes na apuração.<br>
 Contabilidade precisa abrir as apurações fiscais para efetuar os lançamentos necessários.</li>
 </ul>
@@ -132,6 +132,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
