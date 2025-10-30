@@ -97,12 +97,13 @@ st.markdown("""
     background-color:#1E1E1E;
     padding:15px;
     border-radius:8px;">
-<h3>Diferença de valor na NF 880077:</h3>
+<h5>Diferença de valor na NF 880077:</h5>
 <ul style="list-style-type:none; padding-left:0;">
 <li><strong>Status:</strong> Fiscal ciente.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
