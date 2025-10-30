@@ -102,7 +102,7 @@ texto_recuperar = """
 <ul>
 <li>⚠️ Créditos tomados de ICMS sobre frete pelo fiscal não estão sendo registrados na contabilidade.<br>
 <strong>Ação:</strong> lançamentos manuais estão sendo realizados pela contabilidade.</li>
-<li> Entradas de transferências com crédito de ICMS apresentam diversas diferenças.<br>
+<li> ⚠️ Entradas de transferências com crédito de ICMS apresentam diversas diferenças.<br>
 Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre razão e apuração fiscal.<br>
 <strong>Status:</strong> pendente. Detalhes salvos na pasta da rede.</li>
 <li>⚠️ Diferença de valor na NF 880077.<br>
@@ -110,6 +110,7 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
+
 
 
 
