@@ -94,4 +94,5 @@ Entre 01/2025 e 08/2025, foram identificadas 559 notas com divergências entre r
 </ul>
 """
 st.markdown(f"<div class='card'>{color_numbers(texto_recuperar)}</div>", unsafe_allow_html=True)
-``
+
+
