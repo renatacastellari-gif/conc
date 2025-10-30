@@ -97,12 +97,14 @@ st.markdown("""
     background-color:#1E1E1E;
     padding:15px;
     border-radius:8px;">
-<h5>Diferença de valor na NF 880077:</h5>
+<h5> Competência: 05/2025.:</h5>
+<li>Diferença de valor (Stile) na NF 880077</li>
 <ul style="list-style-type:none; padding-left:0;">
 <li><strong>Status:</strong> Fiscal ciente.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
