@@ -38,7 +38,7 @@ else:
 
     
     st.markdown("""
-<h1 style="
+<h3 style="
     color: #FF8C00;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -46,7 +46,7 @@ else:
     text-transform: uppercase;
     margin-bottom: 10px;">
 Conciliações dos Impostos
-</h1>
+</h3>
 """, unsafe_allow_html=True)
 
     
@@ -58,6 +58,7 @@ Conciliações dos Impostos
     st.markdown("""
     - Nesta página, apresento o resumo do trabalho desenvolvido, com os principais destaques. 
     """)
+
 
 
 
