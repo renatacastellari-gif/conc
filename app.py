@@ -34,9 +34,10 @@ else:
     # 🔒 Conteúdo protegido
     st.image('teste.svg', width=400) 
     st.title('Conciliações dos Impostos')
-    st.write('💜 💜:smile: :purple_heart: 💜')
+   
 
     st.markdown("""
     ## Seja bem vindo(a)
     - Aqui você encontrará o resumo do trabalho que tem sido realizado.   
     """)
+
