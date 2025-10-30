@@ -46,6 +46,18 @@ PIS-COFINS a recolher
 </h2>
 """, unsafe_allow_html=True)
 
+<h5 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+    a recolher
+</h5>
+""", unsafe_allow_html=True)
+
 # Bloco 1
 st.markdown("""
 <div class="card">
@@ -78,6 +90,7 @@ A conciliação do mês <strong>09</strong> ainda constam com divergências que 
 Para a competência de outubro, espera-se que os novos parâmetros aplicados pelo departamento fiscal tenham reduzido as divergências entre o razão contábil e a apuração fiscal.</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
