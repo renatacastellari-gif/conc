@@ -73,11 +73,12 @@ st.markdown("""
 # Bloco 4
 st.markdown("""
 <div class="card">
-<p>A conciliação do COFINS foi realizada comparando os itens do razão (notas fiscais), analisando os XMLs e confrontando com a planilha de apuração fiscal.<br>
+<p> A conciliação foi realizada comparando o valor dos itens nas notas fiscais — que também é refletida no razão contábil, analisando os XMLs e confrontando com a planilha de apuração fiscal.<br>
 A conciliação do mês <strong>09</strong> ainda constam com divergências que precisam ser ajustadas pelo contábil na contabilidade. Como exemplo, notas fiscais que não entraram no razão e suas possíveis ações e ajustes na contabilidade<br>
 Para a competência de outubro, espera-se que os novos parâmetros aplicados pelo departamento fiscal tenham reduzido as divergências entre o razão contábil e a apuração fiscal.</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
