@@ -83,6 +83,56 @@ Para a competência de outubro, espera-se que os novos parâmetros aplicados pel
 
 
 
+# novo
+
+# Título principal
+st.markdown("""
+<h2 style="
+    color:#9B4DCC;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    text-align:center;
+    border-bottom:2px solid #FFA500;
+    padding-bottom:8px;
+    margin-bottom:20px;">
+PIS-COFINS
+</h2>
+""", unsafe_allow_html=True)
+st.markdown("""**`PIS - COFINS a recuperar`**""")
+
+
+# Nova tabela com resumo PIS/COFINS
+data_resumo = {
+    "Tributo": ["PIS", "COFINS"],
+    "Período": ["09/2025", "09/2025"],
+    "Vencimento": ["24/10/2025", "24/10/2025"],
+    "Valor Apuração": [19029.95, 89303.88],
+    "Valor Pago": [19885.13, 93307.68]
+}
+
+df_resumo = pd.DataFrame(data_resumo)
+
+# Adicionar coluna Diferença
+df_resumo["Diferença"] = df_resumo["Valor Pago"] - df_resumo["Valor Apuração"]
+
+# Função para destacar diferença positiva
+def highlight_dif(val):
+    return 'background-color: #9b59b6; color: white;' if val > 0 else ''
+
+# Título estilizado
+st.markdown(
+    "<p style='font-size:18px; font-weight:bold; color:#FFA500;'>⚠️ Diferença do Valor pago vs Valor capa apuração</p>",
+    unsafe_allow_html=True
+)
+# Exibir tabela com destaque na coluna Diferença
+st.dataframe(
+    df_resumo.style.format({
+        "Valor Apuração": "{:,.2f}",
+        "Valor Pago": "{:,.2f}",
+        "Diferença": "{:,.2f}"
+    }).applymap(highlight_dif, subset=["Diferença"])
+)
+st.markdown("<p style='font-size:18px; font-weight:bold; color:#FAFF70;'>O departamento fiscal precisa analisar e corrigir, se necessário.</p>", unsafe_allow_html=True)
 
 
 
