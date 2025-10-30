@@ -69,10 +69,13 @@ st.markdown("""
     margin-bottom:20px;">
 <h5>Competência 04/2025:</h5>
 <ul style="list-style-type:none; padding-left:0;">
-<li>Filial 002: Diferença de <span style="color:#FFA500;">R$ 10,00 (Valor pago: R$ 34.146,04. Apuração: R$ 34.136,04</span>. Filial 006: diferença <span style="color:#FFA500;">R$ 13,16</span>.</li>
+
+
+<li>Filial 002: Diferença de <span style="color:#FFA500;">R$ 10,00</span> (Valor pago: <span style="color:#FFA500;">R$ 34.146,04</span>. Apuração: <span style="color:#FFA500;">R$ 34.136,04</span>).</li>
+<li>Filial 006: diferença <span style="color:#FFA500;">R$ 13,16</span>.</li>
 </ul>
-</div>
 """, unsafe_allow_html=True)
+
 
 # Bloco 3 - Filial 015 (03/2025)
 st.markdown("""
@@ -100,6 +103,7 @@ st.markdown("""
 </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
